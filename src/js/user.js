@@ -11,13 +11,15 @@ export function saveUser(user) {
 }
 
 export class Character {
-  constructor(name, type, attack, defence) {
+  constructor(name, type) {
     this.name = name;
     this.type = type;
+
     this.health = 100;
     this.level = 1;
-    this.attack = attack;
-    this.defence = defence;
+    
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
   validateName(name, type) {
